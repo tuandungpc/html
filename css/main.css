@@ -1,0 +1,43 @@
+/*FONTS */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/Roboto-Regular.ttf) format("truetype");
+  }
+  @font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 300;
+	src: local('Roboto-Light'), url("fonts/Roboto-Light.ttf") format('truetype');
+}
+
+
+/* Global properties ======================================================== */
+a[href^="tel:"] { color: inherit; text-decoration: none;}
+::selection{ background:#1cbbb4!important; color:#fff}
+::-moz-selection{ background:#1cbbb4!important; color:#fff}
+
+a{ color:#212121; text-decoration: underline; outline:none; text-decoration: none;}
+a:hover{ color:#212121; text-decoration: none; outline:none}
+
+body{ background: #fff;  border:0; font: 14px 'Roboto', sans-serif; color: #959595; line-height:1.42857143; min-width:320px;}
+
+.container { position: relative; min-width: 320px;}
+
+#main{margin: 0 auto; position: relative; overflow: hidden;}
+
+/* Page Animated item Styles */
+.animated {
+  visibility: hidden;
+}
+
+.visible {
+visibility: visible;
+}
+/*Header==============================================*/
+a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+}
