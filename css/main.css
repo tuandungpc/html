@@ -1,43 +1,207 @@
 /*FONTS */
+
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    src: url(fonts/Roboto-Regular.ttf) format("truetype");
-  }
-  @font-face {
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 300;
-	src: local('Roboto-Light'), url("fonts/Roboto-Light.ttf") format('truetype');
+    src: url("fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    src: url("fonts/Roboto-Light.ttf") format('truetype');
 }
 
 
 /* Global properties ======================================================== */
-a[href^="tel:"] { color: inherit; text-decoration: none;}
-::selection{ background:#1cbbb4!important; color:#fff}
-::-moz-selection{ background:#1cbbb4!important; color:#fff}
 
-a{ color:#212121; text-decoration: underline; outline:none; text-decoration: none;}
-a:hover{ color:#212121; text-decoration: none; outline:none}
+* {
+    -webkit-font-smoothing: antialiased
+}
 
-body{ background: #fff;  border:0; font: 14px 'Roboto', sans-serif; color: #959595; line-height:1.42857143; min-width:320px;}
+a[href^="tel:"] {
+    color: inherit;
+    text-decoration: none;
+}
 
-.container { position: relative; min-width: 320px;}
+::selection {
+    background: #1cbbb4!important;
+    color: #fff
+}
 
-#main{margin: 0 auto; position: relative; overflow: hidden;}
+::-moz-selection {
+    background: #1cbbb4!important;
+    color: #fff
+}
+
+a {
+    color: #212121;
+    text-decoration: underline;
+    outline: none;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #212121;
+    text-decoration: none;
+    outline: none
+}
+
+body {
+    background: #fff;
+    border: 0;
+    font: 14px 'Roboto', sans-serif;
+    color: #959595;
+    line-height: 1.42857143;
+    min-width: 320px;
+}
+
+.container {
+    position: relative;
+    min-width: 320px;
+}
+
+#main {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+p {
+    margin: 0
+}
+
 
 /* Page Animated item Styles */
+
 .animated {
-  visibility: hidden;
+    visibility: hidden;
 }
 
 .visible {
-visibility: visible;
+    visibility: visible;
 }
+
+
 /*Header==============================================*/
-a {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 40px;
+
+.header>div>section:first-child {
+    float: left;
+}
+
+.header>div>section:last-child {
+    float: right;
+    display: inline-block;
+    margin-top: 13px;
+}
+
+.menu-default {
+    display: none;
+}
+
+@media(min-width:992px) {
+    .menu-default {
+        display: block;
+        margin: 0;
+        padding: 0;
+        min-height: 2rem;
+        float: left;
+        border-right: 1px solid #ebebeb;
+        padding-right: 10px;
+    }
+    nav.menu-default>ul {
+        display: block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        line-height: 30px;
+    }
+    nav.menu-default>ul li {
+        display: block;
+        float: left;
+        position: relative
+    }
+    nav.menu-default>ul li>a>label {
+        display: inline-block;
+        height: 100%;
+        margin: 0;
+        padding: 0
+    }
+    nav.menu-default>ul li>a>label>img {
+        vertical-align: middle;
+        margin-right: 0.5rem;
+        max-height: 100%
+    }
+    nav.menu-default>ul>li {
+        margin-left: 2rem
+    }
+    nav.menu-default>ul>li:first-child,
+    .menu-default>ul>li.none+li {
+        margin-left: 0
+    }
+    .menu-default li.search>span {
+        display: inline-block;
+        overflow: hidden;
+        line-height: inherit;
+        position: relative;
+        height: 30px;
+        max-height: 100%;
+        width: 30px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        border: solid 1px transparent;
+        border-radius: 10px;
+        transition: width .8s, border .8s, background-color .5s
+    }
+    .menu-default li.search>span:hover,
+    .menu-default li.search>span:focus,
+    .menu-default li.search>span:active {
+        width: 150px;
+        border: solid 1px #d6d6d0;
+        background-color: #fff
+    }
+    .menu-default li.search>span>input {
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 20px;
+        font-size: 85%;
+        width: 100%;
+        height: 30px;
+        max-height: 100%;
+        padding: 0 25px 0 10px;
+        border: 0;
+        background-color: transparent
+    }
+    .menu-default li.search>span>label {
+        display: inline-block;
+        position: absolute;
+        top: -1px;
+        right: 5px;
+        line-height: 30px;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        font-size: 2rem;
+    }
+    .menu-default li.none {
+        display: none
+    }
+    .mm-menu.mm-current {
+        display: none;
+    }
+}
+
+.user-info,
+.user-info>div {
+    float: right;
+    margin-top: -3px;
+    margin-left: 10px;
+}
+
+.user-info>figure {
+    float: left;
+    margin-left: 10px;
 }
