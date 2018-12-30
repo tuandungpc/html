@@ -300,3 +300,23 @@ ul.tabs li.current {
         margin-top: -30px;
     }
 }
+
+
+/*experience=====================*/
+
+.experience-wrapper {
+    background: url(../images/map.png) center center no-repeat;
+    min-height: 350px;
+}
+
+.experience>p {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.experience>p>a {
+    font-weight: 400;
+    color: #9575cd
+}
