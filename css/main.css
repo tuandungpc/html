@@ -73,15 +73,10 @@ p {
     margin: 0
 }
 
-
-/* Page Animated item Styles */
-
-.animated {
-    visibility: hidden;
-}
-
-.visible {
-    visibility: visible;
+.input-group-addon {
+    color: #737373;
+    background-color: #ffffff;
+    font-size: 2rem;
 }
 
 
@@ -204,4 +199,104 @@ p {
 .user-info>figure {
     float: left;
     margin-left: 10px;
+}
+
+.user-info>div>span {
+    color: #dd4b8f;
+    font-weight: 700;
+}
+
+
+/*Ticket Tabs==========================*/
+
+.ticket-wrapper {
+    background: url(../images/bg-slide.png) center center no-repeat;
+    background-size: cover;
+}
+
+.ticket-tab {
+    background: rgba(38, 137, 218, .6);
+    margin-top: 298px;
+    margin-bottom: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 2px;
+}
+
+ul.tabs {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+ul.tabs .fa-plane {
+    transform: rotate(-45deg);
+    margin-right: 8px;
+}
+
+ul.tabs .fa-subway {
+    margin-right: 8px;
+}
+
+ul.tabs li {
+    background: #2675bb;
+    color: #fff;
+    display: inline-block;
+    padding: 9px 20px;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-right: 5px;
+    margin-top: 0px;
+    min-width: 140px;
+    text-align: center;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 767px) {
+    ul.tabs li {
+        width: 100%;
+    }
+    .table>tbody>tr>td,
+    .table>tbody>tr>th,
+    .table>tfoot>tr>td,
+    .table>tfoot>tr>th,
+    .table>thead>tr>td,
+    .table>thead>tr>th {
+        font-size: 1.1rem;
+    }
+}
+
+ul.tabs li:hover {
+    background: #ff4081;
+    color: #fff;
+}
+
+ul.tabs li.current {
+    background: #ff4081;
+    color: #fff;
+}
+
+.tab-content {
+    display: none;
+    background: none;
+    padding-top: 15px;
+    min-height: 100px;
+}
+
+.tab-content.current {
+    display: inherit;
+}
+
+.ticket-search:before {
+    background-image: url(../images/search.png);
+}
+
+@media (min-width: 768px) {
+    .form-inline .form-group {
+        margin-top: -30px;
+    }
 }

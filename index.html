@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
@@ -44,8 +47,138 @@
                 </section>
             </div>
         </header>
-        <div class="main-content">
-
+        <div class="ticket-wrapper">
+            <div class="container">
+                <div class="ticket-tab">
+                    <ul class="tabs">
+                        <li class="tab-link current" data-tab="tab-1"><i class="fas fa-plane"></i>Vé máy bay</li>
+                        <li class="tab-link" data-tab="tab-2"><i class="fal fa-subway"></i>Vé tàu</li>
+                    </ul>
+                    <div id="tab-1" class="tab-content current animated fadeIn">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <label class="sr-only" for="">From</label>
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fal fa-map-marker-minus"></i></div>
+                                    <select class="form-control" id="">
+                                        <option>Ga đi</option>
+                                        <option>Hà Nội</option>
+                                        <option>Tp Hồ Chí Minh</option>
+                                        <option>Đà Nẵng</option>
+                                        <option>Hải Phòng</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="">Arrival</label>
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fal fa-map-marker-plus"></i></div>
+                                    <select class="form-control" id="">
+                                        <option>Ga đến</option>
+                                        <option>Hà Nội</option>
+                                        <option>Tp Hồ Chí Minh</option>
+                                        <option>Đà Nẵng</option>
+                                        <option>Hải Phòng</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="">Date</label>
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fal fa-calendar-minus"></i></div>
+                                    <input type="text" class="form-control" id="datepicker">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="">Date</label>
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fal fa-calendar-plus"></i></div>
+                                    <input type="text" class="form-control" id="datepicker1">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="">Arrival</label>
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fal fa-user-friends"></i></div>
+                                    <select class="form-control" id="">
+                                            <option>1 người lớn</option>
+                                            <option>2 người lớn</option>
+                                            <option>3 người lớn</option>
+                                            <option>4 người lớn</option>
+                                            <option>5 người lớn</option>
+                                        </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="image" src="images/search.png" alt="Submit" width="83" height="83">
+                            </div>
+                        </form>
+                    </div>
+                    <div id="tab-2" class="tab-content animated fadeIn">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <label class="sr-only" for="">From</label>
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fal fa-map-marker-minus"></i></div>
+                                    <select class="form-control" id="">
+                                        <option>Ga đi</option>
+                                        <option>Hà Nội</option>
+                                        <option>Tp Hồ Chí Minh</option>
+                                        <option>Đà Nẵng</option>
+                                        <option>Hải Phòng</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="">Arrival</label>
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fal fa-map-marker-plus"></i></div>
+                                    <select class="form-control" id="">
+                                        <option>Ga đến</option>
+                                        <option>Hà Nội</option>
+                                        <option>Tp Hồ Chí Minh</option>
+                                        <option>Đà Nẵng</option>
+                                        <option>Hải Phòng</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="">Date</label>
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fal fa-calendar-minus"></i></div>
+                                    <input type="text" class="form-control" id="datepicker">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="">Date</label>
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fal fa-calendar-plus"></i></div>
+                                    <input type="text" class="form-control" id="datepicker1">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="">Arrival</label>
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fal fa-user-friends"></i></div>
+                                    <select class="form-control" id="">
+                                            <option>1 người lớn</option>
+                                            <option>2 người lớn</option>
+                                            <option>3 người lớn</option>
+                                            <option>4 người lớn</option>
+                                            <option>5 người lớn</option>
+                                        </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="image" src="images/search.png" alt="Submit" width="83" height="83">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="padding-top:300px;padding-bottom: 50px">
+            <h2 class="wow fadeInLeft" data-wow-delay="1s">POPULAR CRUISES</h2>
         </div>
         <footer class="footer">
 
