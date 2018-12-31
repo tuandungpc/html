@@ -65,7 +65,7 @@ body {
     background: #fff;
     border: 0;
     font: 14px 'Roboto', sans-serif;
-    color: #000;
+    color: #7e7e7e;
     line-height: 1.42857143;
     min-width: 320px;
 }
@@ -362,7 +362,6 @@ ul.tabs li.current {
 
 .experience {
     text-align: center;
-    color: #000;
 }
 
 .experience>p {
@@ -370,6 +369,7 @@ ul.tabs li.current {
     font-weight: 300;
     padding-top: 50px;
     padding-bottom: 20px;
+    color: #000;
 }
 
 .experience>p>a {
@@ -379,6 +379,7 @@ ul.tabs li.current {
 .experience span {
     font-weight: 500;
     padding: 20px;
+    color: #000;
 }
  .experience span .fa-angle-down{
      font-weight: 500;
