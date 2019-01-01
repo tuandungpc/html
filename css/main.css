@@ -153,7 +153,7 @@ p {
 }
 
 .navbar-toggle {
-    background-color: #000
+    background-color: #1882bd
 }
 
 .navbar-header .navbar-toggle .icon-bar {
@@ -306,6 +306,25 @@ p {
     .mm-menu.mm-current {
         display: none;
     }
+}
+
+.mm-list>li>a,
+.mm-list>li>span {
+    color: #fff !important;
+    text-transform: none !important;
+}
+
+.mm-menu {
+    background: rgba(38, 137, 218, .6);
+}
+
+.mm-panel li:nth-child(5)>a>span {
+    display: flex;
+    align-items: center
+}
+
+.mm-opened .fa-times {
+    margin-left: 10px;
 }
 
 .user-info,
@@ -711,6 +730,14 @@ input[type="email"] {
     margin-top: 20px;
     color: #000;
     font-size: 1.6rem;
+}
+
+.partner img {
+    width: 100%;
+}
+
+.partner>div:nth-child(3) {
+    text-align: center
 }
 
 .reviews {

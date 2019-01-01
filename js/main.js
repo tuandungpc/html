@@ -25,10 +25,10 @@ $(function() {
 });
 new WOW().init();
 
-$(document).ready(function () {
+$(document).ready(function() {
     if ($('#back-to-top').length) {
         var scrollTrigger = 100,
-            backToTop = function () {
+            backToTop = function() {
                 var scrollTop = $(window).scrollTop();
                 if (scrollTop > scrollTrigger) {
                     $('#back-to-top').addClass('show');
@@ -37,10 +37,10 @@ $(document).ready(function () {
                 }
             };
         backToTop();
-        $(window).on('scroll', function () {
+        $(window).on('scroll', function() {
             backToTop();
         });
-        $('#back-to-top').on('click', function (e) {
+        $('#back-to-top').on('click', function(e) {
             e.preventDefault();
             $('html,body').animate({
                 scrollTop: 0
@@ -48,3 +48,9 @@ $(document).ready(function () {
         });
     }
 });
+
+function _mmenu(n) {
+    var i = "right",
+        t;
+    arguments.length > 1 && (i = arguments[1]), t = !0, arguments.length > 2 && (t = arguments[2]), $(document).ready(function() { $("#" + n).mmenu({ offCanvas: { position: i, zposition: "front" } }, { clone: t }) })
+}
